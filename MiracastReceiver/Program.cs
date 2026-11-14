@@ -1,3 +1,6 @@
+using System;
+using System.IO;
+using System.Drawing;
 using System.Diagnostics;
 using System.Windows.Forms;
 
