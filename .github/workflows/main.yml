@@ -18,7 +18,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Publish
-        run: dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o out
+        run: dotnet publish MiracastReceiver/MiracastReceiver.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o out
 
       - name: Upload exe
         uses: actions/upload-artifact@v4
